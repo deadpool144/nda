@@ -1,0 +1,244 @@
+{
+  "document_type": "Mutual NDA",
+  "1_DEFINITIONS": {
+    "1.1_Affiliate": {
+      "term": "Affiliate",
+      "definition": "\"Affiliate\" means, with respect to any Party, any entity that directly or indirectly controls, is controlled by, or is under common control with such Party, where \"control\" means the ownership of more than fifty percent (50%) of the voting rights or the power to direct the management and policies of such entity."
+    },
+    "1.2_Agreement": {
+      "term": "Agreement",
+      "definition": "\"Agreement\" means this Mutual Non-Disclosure Agreement, including all schedules, annexures, exhibits, amendments, modifications, and supplements hereto."
+    },
+    "1.3_Applicable_Law": {
+      "term": "Applicable Law",
+      "definition": "\"Applicable Law\" means any statute, law, ordinance, regulation, rule, notification, circular, order, judgment, decree, directive, governmental approval, or other legal requirement having the force of law and applicable to the Parties or the subject matter of this Agreement."
+    },
+    "1.4_Authorized_Recipient": {
+      "term": "Authorized Recipient",
+      "definition": "\"Authorized Recipient\" means any Representative who has a legitimate need to know the Confidential Information for the Purpose and who is bound by confidentiality obligations no less restrictive than those contained herein."
+    },
+    "1.5_Business_Day": {
+      "term": "Business Day",
+      "definition": "\"Business Day\" means any day other than a Saturday, Sunday, or public holiday on which banks are open for business in the jurisdiction specified in this Agreement."
+    },
+    "1.6_Confidential_Information": {
+      "term": "Confidential Information",
+      "definition": "\"Confidential Information\" means any and all information disclosed by or on behalf of a Party (\"Disclosing Party\") to the other Party (\"Receiving Party\"), whether before, on, or after the Effective Date, in written, oral, visual, electronic, digital, graphic, machine-readable, or any other form, including but not limited to: (a) business plans, strategies, forecasts, and opportunities; (b) financial information, budgets, pricing, costs, revenues, and projections; (c) technical information, specifications, designs, drawings, schematics, models, formulas, inventions, know-how, discoveries, methodologies, and processes; (d) software, source code, object code, algorithms, databases, architecture, and technical documentation; (e) customer, supplier, contractor, consultant, and business partner information; (f) research and development information; (g) intellectual property and proprietary information; (h) trade secrets; (i) contractual arrangements and commercial terms; (j) data, reports, analyses, studies, compilations, summaries, notes, and derivative materials prepared from Confidential Information; and (k) any information that a reasonable person would understand to be confidential in nature."
+    },
+    "1.7_Data_Protection_Laws": {
+      "term": "Data Protection Laws",
+      "definition": "\"Data Protection Laws\" means all applicable laws relating to privacy, data protection, information security, and processing of personal data."
+    },
+    "1.8_Disclosing_Party": {
+      "term": "Disclosing Party",
+      "definition": "\"Disclosing Party\" means the Party disclosing or making available Confidential Information to the Receiving Party."
+    },
+    "1.9_Effective_Date": {
+      "term": "Effective Date",
+      "definition": "\"Effective Date\" means the date on which this Agreement is executed by the last signing Party."
+    },
+    "1.10_Governmental_Authority": {
+      "term": "Governmental Authority",
+      "definition": "\"Governmental Authority\" means any court, tribunal, arbitrator, ministry, department, commission, authority, regulator, agency, instrumentality, or other governmental or quasi-governmental body having jurisdiction."
+    },
+    "1.11_Intellectual_Property_Rights": {
+      "term": "Intellectual Property Rights",
+      "definition": "\"Intellectual Property Rights\" means all patents, patent applications, copyrights, trademarks, service marks, trade names, domain names, designs, database rights, moral rights, trade secrets, know-how, and all other intellectual property rights recognized under Applicable Law."
+    },
+    "1.12_Permitted_Disclosure": {
+      "term": "Permitted Disclosure",
+      "definition": "\"Permitted Disclosure\" means any disclosure expressly permitted under this Agreement, including disclosures to Authorized Recipients, Affiliates, professional advisors, auditors, lenders, investors, or disclosures required by Applicable Law."
+    },
+    "1.13_Person": {
+      "term": "Person",
+      "definition": "\"Person\" includes any individual, corporation, company, partnership, limited liability partnership, trust, association, joint venture, governmental authority, or other legal entity."
+    },
+    "1.14_Personal_Data": {
+      "term": "Personal Data",
+      "definition": "\"Personal Data\" means any information relating to an identified or identifiable natural person as defined under applicable Data Protection Laws."
+    },
+    "1.15_Purpose": {
+      "term": "Purpose",
+      "definition": "\"Purpose\" means the evaluation, discussion, negotiation, performance, or pursuit of a potential business relationship, commercial transaction, investment opportunity, collaboration, partnership, service arrangement, strategic alliance, acquisition, or other mutually agreed objective between the Parties."
+    },
+    "1.16_Protected_Material": {
+      "term": "Protected Material",
+      "definition": "\"Protected Material\" means Confidential Information and all copies, extracts, summaries, analyses, reports, notes, compilations, derivative works, and materials derived therefrom."
+    },
+    "1.17_Receiving_Party": {
+      "term": "Receiving Party",
+      "definition": "\"Receiving Party\" means the Party receiving Confidential Information from the Disclosing Party."
+    },
+    "1.18_Representatives": {
+      "term": "Representatives",
+      "definition": "\"Representatives\" means a Party's directors, officers, employees, consultants, legal counsel, auditors, accountants, financial advisors, agents, contractors, and Affiliates."
+    },
+    "1.19_Residual_Knowledge": {
+      "term": "Residual Knowledge",
+      "definition": "\"Residual Knowledge\" means information retained in the unaided memory of an individual without intentional memorization and without reference to any written or electronic records of Confidential Information."
+    },
+    "1.20_Security_Incident": {
+      "term": "Security Incident",
+      "definition": "\"Security Incident\" means any unauthorized access, acquisition, use, disclosure, alteration, loss, destruction, compromise, or breach of Confidential Information."
+    },
+    "1.21_Third_Party": {
+      "term": "Third Party",
+      "definition": "\"Third Party\" means any Person other than the Parties and their Authorized Recipients."
+    },
+    "1.22_Trade_Secret": {
+      "term": "Trade Secret",
+      "definition": "\"Trade Secret\" means information that derives independent economic value from not being generally known or readily ascertainable and is subject to reasonable efforts to maintain its secrecy."
+    },
+    "1.23_Written_Notice": {
+      "term": "Written Notice",
+      "definition": "\"Written Notice\" means a notice delivered by hand, courier, registered post, or electronic mail in accordance with the Notice provisions of this Agreement."
+    }
+  },
+  "2_EXCLUSIONS_FROM_CONFIDENTIAL_INFORMATION": {
+    "2.1": {
+      "a": "was publicly available at the time of disclosure or subsequently becomes publicly available through no act, omission, or breach of this Agreement by the Receiving Party or its Representatives",
+      "b": "was lawfully known to the Receiving Party, without any obligation of confidentiality, prior to its disclosure by the Disclosing Party",
+      "c": "is independently developed by the Receiving Party without reference to, reliance upon, or use of the Confidential Information of the Disclosing Party",
+      "d": "is lawfully obtained by the Receiving Party from a third party who is not under any confidentiality obligation, directly or indirectly, to the Disclosing Party in respect of such information",
+      "e": "is approved for release or disclosure by the prior written consent of the Disclosing Party",
+      "f": "is required to be disclosed pursuant to any Applicable Law, regulation, stock exchange requirement, governmental directive, court order, arbitral order, or request of a competent governmental authority, provided that, to the extent legally permissible, the Receiving Party shall promptly notify the Disclosing Party of such requirement and shall cooperate with the Disclosing Party in seeking an appropriate protective order or other remedy",
+      "g": "is disclosed by the Receiving Party after obtaining the prior written approval of the Disclosing Party for such disclosure; or",
+      "h": "constitutes Residual Knowledge retained in the unaided memory of the Receiving Party's personnel, provided that such personnel have not intentionally memorized the Confidential Information and such use does not result in disclosure of Confidential Information."
+    },
+    "2.2": {
+      "text": "For the avoidance of doubt, the combination of individual items of information shall not be deemed to fall within the foregoing exclusions merely because individual elements thereof are publicly available, unless the combination itself is publicly available or otherwise falls within one of the exclusions set forth above."
+    }
+  },
+  "3_CONFIDENTIALITY_OBLIGATIONS": {
+    "3.1": "The Receiving Party shall keep all Confidential Information strictly confidential and shall protect such Confidential Information using at least the same degree of care that it employs to protect its own confidential and proprietary information of a similar nature, and in any event, no less than a reasonable degree of care.",
+    "3.2": "The Receiving Party shall use the Confidential Information solely for the Purpose and for no other purpose whatsoever without the prior written consent of the Disclosing Party.",
+    "3.3": "The Receiving Party shall not directly or indirectly disclose, publish, disseminate, transmit, copy, reproduce, distribute, or otherwise make available any Confidential Information to any Person except as expressly permitted under this Agreement.",
+    "3.4": "The Receiving Party shall restrict access to Confidential Information only to those Authorized Recipients who have a legitimate need to know such Confidential Information for the Purpose.",
+    "3.5": "Prior to any disclosure to an Authorized Recipient, the Receiving Party shall ensure that such Authorized Recipient is bound by confidentiality obligations no less restrictive than those contained in this Agreement.",
+    "3.6": "The Receiving Party shall remain fully responsible and liable for any act, omission, breach, unauthorized disclosure, misuse, or violation of this Agreement by its Representatives or Authorized Recipients.",
+    "3.7": "The Receiving Party shall not remove, alter, obscure, or tamper with any confidentiality, proprietary, copyright, trademark, or ownership notices appearing on or within the Confidential Information.",
+    "3.8": "The Receiving Party shall implement and maintain appropriate administrative, technical, organizational, and physical safeguards designed to prevent unauthorized access to, use of, disclosure of, loss of, or damage to the Confidential Information.",
+    "3.9": "The Receiving Party shall promptly notify the Disclosing Party upon becoming aware of any actual, suspected, or threatened unauthorized access, use, disclosure, loss, theft, compromise, or Security Incident involving Confidential Information and shall cooperate with the Disclosing Party in mitigating the effects thereof.",
+    "3.10": "The Receiving Party acknowledges that all Confidential Information shall remain the exclusive property of the Disclosing Party and that no right, title, interest, license, or ownership in respect of such Confidential Information is granted or transferred by virtue of this Agreement except the limited right to use such Confidential Information for the Purpose.",
+    "3.11": "The obligations set forth in this Clause shall apply irrespective of the form in which the Confidential Information is disclosed and shall continue throughout the Term of this Agreement and for the applicable survival period thereafter."
+  },
+  "4_PERMITTED_DISCLOSURES": {
+    "4.1": "Notwithstanding anything to the contrary contained in this Agreement, the Receiving Party may disclose Confidential Information solely to the extent necessary and strictly on a need-to-know basis to its Authorized Recipients for the Purpose.",
+    "4.2": "The Receiving Party may disclose Confidential Information to the following categories of Authorized Recipients: (a) its directors, officers, employees, and Affiliates; (b) its legal counsel, advocates, solicitors, consultants, auditors, accountants, and professional advisors; (c) its financial advisors, lenders, investors, funding institutions, and potential financing parties; (d) contractors, subcontractors, agents, and service providers engaged for the Purpose; (e) regulatory authorities, governmental authorities, stock exchanges, courts, tribunals, or arbitral bodies where disclosure is required by Applicable Law; (f) any other Person with the prior written consent of the Disclosing Party.",
+    "4.3": "Prior to any disclosure under this Clause, the Receiving Party shall ensure that such Authorized Recipients are informed of the confidential nature of the Confidential Information and are bound by confidentiality obligations no less restrictive than those contained in this Agreement.",
+    "4.4": "The Receiving Party shall remain fully responsible and liable for any act, omission, unauthorized disclosure, misuse, or breach of this Agreement by its Authorized Recipients, Representatives, Affiliates, advisors, consultants, contractors, or agents.",
+    "4.5": "Where disclosure is required pursuant to Applicable Law, regulation, governmental directive, judicial order, arbitral order, or regulatory requirement, the Receiving Party shall, to the extent legally permissible: (a) promptly notify the Disclosing Party of such requirement; (b) provide reasonable cooperation to the Disclosing Party in seeking a protective order, confidential treatment, or other appropriate remedy; and (c) disclose only that portion of the Confidential Information that is legally required to be disclosed.",
+    "4.6": "No disclosure permitted under this Clause shall relieve the Receiving Party of its continuing obligations of confidentiality under this Agreement.",
+    "4.7": "The Receiving Party shall maintain appropriate records of disclosures made pursuant to this Clause and shall provide reasonable details of such disclosures to the Disclosing Party upon written request, subject to Applicable Law and professional privilege restrictions."
+  },
+  "5_NON_USE_OBLIGATIONS": {},
+  "6_COMPELLED_DISCLOSURE": {
+    "6.1": "Notwithstanding any other provision of this Agreement, the Receiving Party may disclose Confidential Information to the extent such disclosure is required by Applicable Law, regulation, judicial order, arbitral order, governmental directive, stock exchange requirement, or request of a competent Governmental Authority.",
+    "6.2": "Where the Receiving Party becomes aware of any requirement to disclose Confidential Information pursuant to Clause 6.1, it shall, to the extent legally permissible: (a) promptly notify the Disclosing Party in writing of such requirement; (b) provide the Disclosing Party with reasonable details regarding the nature and scope of the required disclosure; (c) cooperate with the Disclosing Party, at the Disclosing Party's cost, in seeking an appropriate protective order, confidential treatment, injunction, or other remedy to prevent or limit such disclosure; and (d) allow the Disclosing Party a reasonable opportunity to contest, challenge, or otherwise seek protection against such disclosure.",
+    "6.3": "If disclosure remains legally required notwithstanding the efforts described above, the Receiving Party shall disclose only that portion of the Confidential Information that is strictly required to be disclosed and shall use reasonable efforts to obtain confidential treatment for the disclosed information.",
+    "6.4": "The Receiving Party shall not be liable for disclosure made in accordance with this Clause, provided that it has complied with its obligations set forth herein.",
+    "6.5": "Any Confidential Information disclosed pursuant to this Clause shall continue to be treated as Confidential Information for all other purposes under this Agreement.",
+    "6.6": "The Receiving Party shall, where legally permissible, promptly notify the Disclosing Party after such disclosure has been made and provide reasonable details regarding the information disclosed and the circumstances of such disclosure.",
+    "6.7": "Nothing in this Clause shall require the Receiving Party to violate any Applicable Law, court order, regulatory requirement, legal privilege, professional obligation, or duty of confidentiality owed to a Governmental Authority."
+  },
+  "7_RETURN_OR_DESTRUCTION_OF_CONFIDENTIAL_INFORMATION": {
+    "7.1": "Upon the earlier of: (a) completion of the Purpose; (b) termination or expiration of this Agreement; or (c) receipt of a written request from the Disclosing Party, the Receiving Party shall promptly, and in any event within fifteen (15) Business Days (or such other period as may be agreed in writing), cease using the Confidential Information and shall, at the option of the Disclosing Party, either: (i) return all Confidential Information to the Disclosing Party; or (ii) permanently destroy all Confidential Information in its possession, custody, or control.",
+    "7.2": "The obligations set forth in Clause 7.1 shall apply to all forms of Confidential Information, including: (a) physical documents and records; (b) electronic files and digital records; (c) emails and electronic communications; (d) reports, summaries, analyses, notes, compilations, extracts, and derivative materials prepared by or on behalf of the Receiving Party; and (e) any copies, reproductions, backups, or duplicates thereof.",
+    "7.3": "The Receiving Party shall use commercially reasonable efforts to permanently delete or destroy all electronic copies of Confidential Information stored on its systems, devices, servers, databases, cloud environments, and storage media.",
+    "7.4": "Upon written request by the Disclosing Party, the Receiving Party shall provide a written certification, signed by an authorized representative, confirming compliance with the obligations contained in this Clause.",
+    "7.5": "Notwithstanding anything contained herein, the Receiving Party may retain copies of Confidential Information to the extent required by: (a) Applicable Law; (b) regulatory requirements; (c) judicial or governmental orders; (d) bona fide internal compliance, audit, risk management, record retention, or document preservation policies; or (e) automatic backup and disaster recovery systems maintained in the ordinary course of business.",
+    "7.6": "Any Confidential Information retained pursuant to Clause 7.5 shall: (a) remain subject to the confidentiality obligations contained in this Agreement; (b) not be accessed, reviewed, used, disclosed, or otherwise exploited except as required by Applicable Law or internal compliance requirements; and (c) be retained only for so long as required for the applicable purpose.",
+    "7.7": "The return, destruction, deletion, or retention of Confidential Information under this Clause shall not relieve the Receiving Party of its continuing obligations under this Agreement, including the obligations relating to confidentiality, non-use, intellectual property protection, and dispute resolution.",
+    "7.8": "The Receiving Party acknowledges that the return or destruction of Confidential Information may not, in itself, adequately remedy any breach of this Agreement and that the Disclosing Party shall retain all rights and remedies available under law or equity in respect of any such breach."
+  },
+  "8_INTELLECTUAL_PROPERTY_RIGHTS_AND_NO_LICENSE": {
+    "8.1": "All Confidential Information disclosed under this Agreement, together with all Intellectual Property Rights subsisting therein, shall remain the sole and exclusive property of the Disclosing Party.",
+    "8.2": "Nothing contained in this Agreement, nor any disclosure of Confidential Information pursuant hereto, shall be construed as granting, transferring, assigning, licensing, or otherwise conveying to the Receiving Party any right, title, interest, license, or ownership in or to any Intellectual Property Rights of the Disclosing Party.",
+    "8.3": "The Receiving Party acknowledges and agrees that all patents, patent applications, copyrights, trademarks, service marks, trade names, domain names, designs, trade secrets, know-how, inventions, discoveries, software, databases, methodologies, processes, and other proprietary rights embodied in the Confidential Information shall remain the exclusive property of the Disclosing Party.",
+    "8.4": "The disclosure of Confidential Information shall not be construed as granting any express, implied, estoppel-based, or other license under any patent, copyright, trademark, trade secret, or other Intellectual Property Right of the Disclosing Party.",
+    "8.5": "The Receiving Party shall not: (a) register, apply for registration of, or claim ownership over any Intellectual Property Right derived from or based upon the Confidential Information; (b) challenge, contest, or dispute the validity or ownership of any Intellectual Property Rights of the Disclosing Party; or (c) remove, alter, obscure, or tamper with any proprietary notices, copyright notices, trademarks, logos, confidentiality legends, or ownership markings contained in or affixed to the Confidential Information.",
+    "8.6": "Any suggestions, feedback, comments, recommendations, improvements, modifications, or observations voluntarily provided by the Receiving Party in relation to the Confidential Information shall not transfer any ownership rights in the underlying Confidential Information unless expressly agreed otherwise in writing.",
+    "8.7": "No disclosure of Confidential Information and no provision of this Agreement shall obligate either Party to enter into any further agreement, transaction, business relationship, partnership, joint venture, agency arrangement, employment relationship, investment, or commercial arrangement with the other Party.",
+    "8.8": "Except for the limited right to access and use the Confidential Information strictly for the Purpose and subject to the terms of this Agreement, no other rights are granted to the Receiving Party.",
+    "8.9": "Any unauthorized use, reproduction, distribution, exploitation, commercialization, reverse engineering, or misappropriation of the Confidential Information or any Intellectual Property Rights therein shall constitute a material breach of this Agreement and may result in irreparable harm to the Disclosing Party.",
+    "8.10": "The provisions of this Clause shall survive the termination or expiration of this Agreement for so long as the relevant Intellectual Property Rights remain protected under Applicable Law."
+  },
+  "9_DATA_PROTECTION_AND_INFORMATION_SECURITY": {
+    "9.1": "Each Party shall implement and maintain appropriate administrative, technical, organizational, and physical safeguards designed to protect Confidential Information against unauthorized access, acquisition, use, disclosure, alteration, loss, destruction, corruption, or Security Incidents.",
+    "9.2": "The Receiving Party shall process, store, transmit, and handle Confidential Information in accordance with Applicable Law, industry best practices, and its internal information security policies.",
+    "9.3": "To the extent that Confidential Information includes Personal Data, the Receiving Party shall comply with all applicable Data Protection Laws and shall process such Personal Data solely for the Purpose and in accordance with this Agreement.",
+    "9.4": "The Receiving Party shall ensure that access to Confidential Information is restricted to Authorized Recipients on a strict need-to-know basis and shall maintain reasonable access controls, authentication mechanisms, and security procedures.",
+    "9.5": "The Receiving Party shall not transfer, transmit, store, or otherwise make available Confidential Information in any jurisdiction where such transfer would violate Applicable Law or materially reduce the level of protection afforded to such Confidential Information.",
+    "9.6": "The Receiving Party shall take reasonable measures to protect Confidential Information against cyber threats, malware, unauthorized access, data breaches, ransomware attacks, and other information security risks.",
+    "9.7": "In the event of any actual, suspected, or threatened Security Incident involving Confidential Information, the Receiving Party shall: (a) promptly notify the Disclosing Party without undue delay; (b) provide reasonable details regarding the nature, scope, and potential impact of the Security Incident; (c) take all reasonable measures to contain, investigate, mitigate, and remediate the Security Incident; (d) cooperate with the Disclosing Party in assessing and responding to the Security Incident.",
+    "9.8": "The Receiving Party shall not knowingly introduce any malicious code, virus, malware, ransomware, spyware, Trojan horse, or other harmful software into systems, networks, or environments containing Confidential Information.",
+    "9.9": "Upon reasonable written notice, the Disclosing Party may request information reasonably necessary to verify the Receiving Party's compliance with the obligations set forth in this Clause, provided that such request does not require disclosure of the Receiving Party's own confidential security measures or proprietary information.",
+    "9.10": "The obligations contained in this Clause shall survive the expiration or termination of this Agreement for so long as the Receiving Party retains or has access to any Confidential Information or Personal Data of the Disclosing Party."
+  },
+  "10_NO_WARRANTY": {
+    "10.1": "The Receiving Party acknowledges and agrees that all Confidential Information is disclosed on an \"as is\", \"where is\", and \"as available\" basis.",
+    "10.2": "The Disclosing Party makes no representation, warranty, undertaking, guarantee, or assurance of any kind, whether express, implied, statutory, or otherwise, with respect to the Confidential Information, including without limitation as to: (a) its accuracy, completeness, reliability, adequacy, timeliness, quality, or usefulness; (b) its fitness for a particular purpose; (c) its merchantability; (d) its non-infringement of third-party rights; or (e) the results that may be obtained from its use.",
+    "10.3": "The Receiving Party acknowledges that the Confidential Information may contain estimates, projections, forecasts, assumptions, opinions, expectations, analyses, or forward-looking statements which may be subject to change and may not ultimately prove to be accurate.",
+    "10.4": "The Disclosing Party shall have no obligation to update, supplement, correct, revise, or otherwise notify the Receiving Party of any changes relating to the Confidential Information.",
+    "10.5": "The Receiving Party shall independently evaluate and verify the Confidential Information and shall rely solely upon its own investigation, analysis, judgment, and professional advice in connection with the Purpose.",
+    "10.6": "Nothing contained in this Agreement or the disclosure of Confidential Information shall: (a) obligate either Party to proceed with any proposed transaction, business relationship, investment, collaboration, or commercial arrangement; (b) create any legally binding commitment to enter into any future agreement; (c) constitute an offer, acceptance, promise, or undertaking to conclude any transaction; or (d) create any partnership, joint venture, agency, fiduciary, employment, or other special relationship between the Parties.",
+    "10.7": "Neither Party shall be liable to the other Party for any loss, damage, cost, claim, liability, or expense arising from reliance upon or use of the Confidential Information except as expressly provided under this Agreement or Applicable Law.",
+    "10.8": "The provisions of this Clause shall survive the expiration or termination of this Agreement."
+  },
+  "11_TERM_AND_TERMINATION": {
+    "11.1": "TERM",
+    "11.2": "This Agreement shall commence on the Effective Date and shall remain in full force and effect for a period of three (3) years (\"Term\"), unless earlier terminated in accordance with the provisions of this Agreement. The Parties may extend the Term by mutual written agreement.",
+    "11.3": "Termination by Mutual Agreement",
+    "11.4": "This Agreement may be terminated at any time by mutual written agreement of the Parties.",
+    "11.5": "Termination for Convenience",
+    "11.6": "Either Party may terminate this Agreement, without assigning any reason, by providing not less than thirty (30) days' prior written notice to the other Party.",
+    "11.7": "Termination for Material Breach",
+    "11.8": "Either Party may terminate this Agreement with immediate effect by written notice if the other Party: (a) materially breaches any provision of this Agreement and fails to cure such breach within fifteen (15) Business Days after receipt of written notice specifying the breach; (b) repeatedly breaches this Agreement in a manner that reasonably indicates an unwillingness or inability to comply with its obligations; (c) engages in any unauthorized use or disclosure of Confidential Information.",
+    "11.9": "Termination Due to Insolvency",
+    "11.10": "Either Party may terminate this Agreement immediately upon written notice if the other Party: (a) becomes insolvent or unable to pay its debts as they become due; (b) enters into liquidation, dissolution, administration, winding-up, or bankruptcy proceedings; (c) makes an assignment for the benefit of creditors; or (d) has a receiver, administrator, liquidator, or similar officer appointed over a substantial part of its assets.",
+    "11.11": "Effect of Termination",
+    "11.12": "Upon termination or expiration of this Agreement: (a) all rights granted to the Receiving Party with respect to the Confidential Information shall immediately cease; (b) the Receiving Party shall comply with the Return or Destruction of Confidential Information provisions contained in this Agreement; (c) each Party shall remain liable for any breach occurring prior to the date of termination; (d) termination shall not affect any accrued rights, remedies, obligations, or liabilities of either Party.",
+    "11.13": "No Release from Existing Obligations",
+    "11.14": "Termination or expiration of this Agreement shall not relieve either Party from obligations that expressly or by their nature are intended to survive termination.",
+    "11.15": "Survival",
+    "11.16": "Without limitation, the following provisions shall survive the expiration or termination of this Agreement: (a) Definitions; (b) Confidentiality Obligations; (c) Permitted Disclosures; (d) Non-Use Obligations; (e) Return or Destruction of Confidential Information; (f) Intellectual Property Rights; (g) Non-Circumvention and Non-Solicitation; (h) Data Protection and Information Security; (i) No Warranty; (j) Remedies; (k) Limitation of Liability; (l) Indemnity; (m) Governing Law; (n) Dispute Resolution; (o) and any other provision which by its nature is intended to survive termination.",
+    "11.17": "Continuing Confidentiality Obligations",
+    "11.18": "Notwithstanding the expiration or termination of this Agreement, the Receiving Party shall continue to be bound by the confidentiality and non-use obligations contained herein for the survival period specified in this Agreement, and in the case of Trade Secrets, for so long as such information remains a Trade Secret under Applicable Law."
+  },
+  "12_REMEDIES_AND_INJUNCTIVE_RELIEF": {
+    "12.1": "The Parties acknowledge and agree that the Confidential Information disclosed pursuant to this Agreement is valuable, proprietary, and unique in nature and that any unauthorized use, disclosure, misappropriation, or breach of this Agreement may cause substantial and irreparable harm to the Disclosing Party.",
+    "12.2": "The Receiving Party further acknowledges that monetary damages alone may not constitute an adequate remedy for any actual, threatened, or anticipated breach of this Agreement.",
+    "12.3": "Accordingly, in the event of any actual, threatened, or suspected breach of this Agreement, the Disclosing Party shall be entitled, without the requirement of proving actual damages or posting any bond, security, or other undertaking (to the extent permitted by Applicable Law), to seek: (a) temporary, interim, interlocutory, and permanent injunctive relief; (b) specific performance of the obligations contained herein; (c) equitable relief; (d) restraining orders; (e) mandatory injunctions; (f) recovery of damages, losses, costs, and expenses; and (g) any other remedy available under Applicable Law.",
+    "12.4": "The rights and remedies provided under this Agreement are cumulative and are in addition to, and not in substitution for, any rights or remedies available under Applicable Law, equity, contract, tort, statute, or otherwise.",
+    "12.5": "No exercise or failure to exercise any right or remedy by a Party shall constitute a waiver of any other right or remedy available to such Party.",
+    "12.6": "The Receiving Party shall promptly notify the Disclosing Party upon becoming aware of any unauthorized use, disclosure, access, acquisition, loss, theft, Security Incident, or other breach involving Confidential Information and shall cooperate fully in investigating, mitigating, and remedying the effects of such breach.",
+    "12.7": "Nothing in this Agreement shall limit the right of either Party to seek damages or any other relief available under Applicable Law for any breach of this Agreement.",
+    "12.8": "The Parties acknowledge that a breach of the provisions relating to Confidentiality, Non-Use, Intellectual Property Rights, Non-Circumvention and Non-Solicitation, Data Protection, and Return or Destruction of Confidential Information shall be deemed a material breach of this Agreement.",
+    "12.9": "The provisions of this Clause shall survive the expiration or termination of this Agreement."
+  },
+  "13_LIMITATION_OF_LIABILITY": {
+    "13.1": "Except as expressly provided in this Agreement, neither Party shall be liable to the other Party for any indirect, incidental, consequential, exemplary, special, punitive, or speculative damages, including loss of profits, loss of revenue, loss of business opportunities, loss of goodwill, loss of anticipated savings, or business interruption, arising out of or in connection with this Agreement, whether based on contract, tort, negligence, strict liability, statute, or otherwise, even if advised of the possibility of such damages.",
+    "13.2": "Subject to Clauses 13.3 and 13.4, the aggregate liability of either Party arising out of or in connection with this Agreement shall not exceed INR [●] or the amount of actual direct damages suffered by the aggrieved Party, whichever is lower.",
+    "13.3": "The limitations and exclusions of liability contained in this Clause shall not apply to: (a) fraud, fraudulent misrepresentation, or wil\tful misconduct; (b) gross negligence; (c) unauthorized use or disclosure of Confidential Information; (d) breach of Intellectual Property Rights; (e) breach of Data Protection and Information Security obligations; (f) breach of Non-Circumvention and Non-Solicitation obligations; (g) liability arising from a court order, arbitral award, or statutory obligation that cannot be excluded under Applicable Law.",
+    "13.4": "Nothing in this Agreement shall limit or exclude a Party's right to seek: (a) injunctive relief; (b) specific performance; (c) equitable remedies; (d) recovery of direct damages resulting from a breach of this Agreement.",
+    "13.5": "Each Party acknowledges that the limitations of liability set forth in this Clause are reasonable, have been negotiated between the Parties, and form an essential basis of the bargain reflected in this Agreement.",
+    "13.6": "The provisions of this Clause shall survive the expiration or termination of this Agreement."
+  },
+  "14_INDEMNITY": {
+    "14.1": "Each Party (\"Indemnifying Party\") shall indemnify, defend, and hold harmless the other Party, its Affiliates, directors, officers, employees, agents, successors, and permitted assigns (collectively, the \"Indemnified Parties\") from and against any and all losses, damages, liabilities, claims, actions, proceedings, judgments, penalties, fines, costs, and expenses (including reasonable legal fees and expenses) arising out of or resulting from: (a) any breach of this Agreement by the Indemnifying Party; (b) any unauthorized access, use, disclosure, misappropriation, loss, theft, or compromise of Confidential Information caused by the Indemnifying Party or its Representatives; (c) any violation of Applicable Law by the Indemnifying Party in connection with the performance of this Agreement; (d) any breach of the confidentiality obligations, non-use obligations, data protection obligations, or intellectual property obligations contained herein; (e) any act, omission, negligence, wilful misconduct, fraud, or misconduct of the Indemnifying Party or its Representatives resulting in loss or damage to the Indemnified Parties.",
+    "14.2": "The Indemnifying Party shall also indemnify the Indemnified Parties against any third-party claims, actions, investigations, regulatory proceedings, or demands arising from the acts or omissions described in Clause 14.1.",
+    "14.3": "The Indemnified Party shall promptly notify the Indemnifying Party of any claim for which indemnification is sought under this Clause, provided that any delay in giving such notice shall not relieve the Indemnifying Party of its indemnification obligations except to the extent that such delay materially prejudices its ability to defend the claim.",
+    "14.4": "The Indemnifying Party shall have the right to assume the defense of any third-party claim with counsel reasonably acceptable to the Indemnified Party, provided that: (a) the Indemnified Party may participate in such defense at its own expense; (b) the Indemnifying Party shall not settle any claim in a manner that imposes liability, admission of fault, or obligation on the Indemnified Party without the prior written consent of the Indemnified Party.",
+    "14.5": "The remedies and indemnities provided under this Clause are cumulative and in addition to any other rights or remedies available under this Agreement or Applicable Law.",
+    "14.6": "Nothing in this Clause shall limit the right of an Indemnified Party to seek injunctive relief, specific performance, equitable remedies, or any other remedy available under Applicable Law.",
+    "14.7": "The obligations contained in this Clause shall survive the expiration or termination of this Agreement."
+  },
+  "15_NON_CIRCUMVENTION_AND_NON_SOLICITATION": {},
+  "16_PUBLIC_ANNOUNCEMENTS": {
+    "16.1": "Neither Party shall, without the prior written consent of the other Party, issue or make any press release, public announcement, media statement, advertisement, marketing communication, investor communication, website publication, social media post, or other public disclosure concerning: (a) the existence of this Agreement; (b) the Purpose; (c) the existence or status of discussions, negotiations, or communications between the Parties; (d) the exchange of Confidential Information pursuant to this Agreement; or (e) any proposed transaction, collaboration, investment, business relationship, or commercial arrangement contemplated by the Parties.",
+    "16.2": "Neither Party shall use the name, logo, trademark, trade name, service mark, brand, or other identifying information of the other Party in any public communication, promotional material, advertisement, publication, or marketing activity without the prior written consent of the other Party.",
+    "16.3": "Notwithstanding anything contained herein, either Party may make a disclosure to the extent required by: (a) Applicable Law; (b) any stock exchange or securities regulatory requirement; (c) any Governmental Authority; (d) any court, tribunal, or arbitral authority having jurisdiction; or (e) any regulatory, compliance, or reporting obligation applicable to such Party, Provided that, to the extent legally permissible, the disclosing Party shall promptly notify the other Party and reasonably cooperate in seeking confidential treatment or protective measures with respect to such disclosure.",
+    "16.4": "Any disclosure made pursuant to Clause 16.3 shall be limited to the minimum information legally required to be disclosed.",
+    "16.5": "The obligations contained in this Clause shall survive the expiration or termination of this Agreement for a period of two (2) years thereafter."
+  }
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexForge — Contract Creator Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/theme.css">
+    <style>
+        /* AI Enhancement Mode Overrides */
+        .workspace-split.ai-enhancement-mode {
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content 1fr;
+        }
+        .workspace-split.ai-enhancement-mode .form-wizard-card {
+            padding: 20px 40px;
+            height: auto;
+            border-right: none;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .workspace-split.ai-enhancement-mode .preview-panel {
+            border-left: none;
+        }
+        .workspace-split.ai-enhancement-mode .simulated-page-container {
+            overflow-y: hidden;
+            padding: 20px;
+        }
+        .workspace-split.ai-enhancement-mode .simulated-a4-page {
+            overflow-y: auto;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-mesh"></div>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <span class="logo-icon">⚖️</span>
+                <span class="logo-text">LexForge</span>
+            </div>
+
+            <div class="steps-progress-container">
+                <ul class="steps-list">
+                    <li class="step-item active" data-step="1">
+                        <span class="step-num">1</span>
+                        <span class="step-label">Select Agreement</span>
+                    </li>
+                    <li class="step-item" data-step="2">
+                        <span class="step-num">2</span>
+                        <span class="step-label">Agreement Details</span>
+                    </li>
+                    <li class="step-item" data-step="3">
+                        <span class="step-num">3</span>
+                        <span class="step-label">Industry Selection</span>
+                    </li>
+                    <li class="step-item" data-step="4">
+                        <span class="step-num">4</span>
+                        <span class="step-label">Party Details</span>
+                    </li>
+                    <li class="step-item" data-step="5">
+                        <span class="step-num">5</span>
+                        <span class="step-label">Role Identification</span>
+                    </li>
+                    <li class="step-item" data-step="6">
+                        <span class="step-num">6</span>
+                        <span class="step-label">Purpose & Recitals</span>
+                    </li>
+                    <li class="step-item" data-step="7">
+                        <span class="step-num">7</span>
+                        <span class="step-label">Commercial Terms</span>
+                    </li>
+                    <li class="step-item" data-step="8">
+                        <span class="step-num">8</span>
+                        <span class="step-label">Clause Library</span>
+                    </li>
+                    <li class="step-item" data-step="9">
+                        <span class="step-num">9</span>
+                        <span class="step-label">Clause Config</span>
+                    </li>
+                    <li class="step-item" data-step="10">
+                        <span class="step-num">10</span>
+                        <span class="step-label">Definitions</span>
+                    </li>
+                    <li class="step-item" data-step="11">
+                        <span class="step-num">11</span>
+                        <span class="step-label">Notice Details</span>
+                    </li>
+                    <li class="step-item" data-step="12">
+                        <span class="step-num">12</span>
+                        <span class="step-label">Dispute Resolution</span>
+                    </li>
+                    <li class="step-item" data-step="13">
+                        <span class="step-num">13</span>
+                        <span class="step-label">Execution Details</span>
+                    </li>
+                    <li class="step-item" data-step="14">
+                        <span class="step-num">14</span>
+                        <span class="step-label">AI Review Summary</span>
+                    </li>
+                    <li class="step-item" data-step="15">
+                        <span class="step-num">15</span>
+                        <span class="step-label">AI Enhancement</span>
+                    </li>
+                    <li class="step-item" data-step="16">
+                        <span class="step-num">16</span>
+                        <span class="step-label">Generate & Export</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Form Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <h1 id="page-title">Create Agreement</h1>
+                    <p id="page-subtitle">Configure your legal parameters step by step.</p>
+                </div>
+                <div class="header-right">
+                    <button id="theme-toggle" class="btn btn-secondary">🌓 Toggle Theme</button>
+                </div>
+            </header>
+
+            <div class="workspace-split">
+                <!-- Left: Form Wizard -->
+                <div class="form-wizard-card">
+                    <!-- Step 1: Select Agreement -->
+                    <div class="wizard-step-panel active" id="panel-1">
+                        <h2>Step 1: Select Agreement</h2>
+                        <div class="form-group">
+                            <label>NDA Nature</label>
+                            <select id="agreement-nature" class="form-control">
+                                <option value="Mutual">Mutual NDA (Both Parties Share)</option>
+                                <option value="Unilateral">Unilateral NDA (One Discloses)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Agreement Category</label>
+                            <select id="agreement-category" class="form-control">
+                                <option value="General Commercial">General Commercial</option>
+                                <option value="Renewable Energy">Renewable Energy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Agreement Type</label>
+                            <select id="agreement-type" class="form-control">
+                                <option value="NDA">Non-Disclosure Agreement (NDA)</option>
+                                <option value="Service Agreement">Service Agreement</option>
+                                <option value="Consultancy Agreement">Consultancy Agreement</option>
+                                <option value="Vendor Agreement">Vendor Agreement</option>
+                                <option value="Supply Agreement">Supply Agreement</option>
+                                <option value="Power Purchase Agreement">Power Purchase Agreement (PPA)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Agreement Details -->
+                    <div class="wizard-step-panel" id="panel-2">
+                        <h2>Step 2: Agreement Details</h2>
+                        <div class="form-group">
+                            <label>Agreement Title</label>
+                            <input type="text" id="agreement-title-input" class="form-control"
+                                placeholder="Auto-generated title">
+                        </div>
+                        <div class="form-group">
+                            <label>Effective Date</label>
+                            <select id="effective-date-option" class="form-control">
+                                <option value="Date of Signing">Date of Signing (Upon final signature)</option>
+                                <option value="Custom Date">Custom Date</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="custom-date-container" style="display:none;">
+                            <label>Select Custom Effective Date</label>
+                            <input type="date" id="custom-effective-date-input" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Agreement Language</label>
+                            <select id="agreement-language" class="form-control">
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Industry Selection -->
+                    <div class="wizard-step-panel" id="panel-3">
+                        <h2>Step 3: Industry Selection</h2>
+                        <div class="form-group">
+                            <label>Primary Industry</label>
+                            <select id="industry-select" class="form-control">
+                                <option value="General Commercial">General Commercial</option>
+                                <option value="Renewable Energy">Renewable Energy</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="sub-sector-container" style="display:none;">
+                            <label>Renewable Sub-Sector</label>
+                            <select id="sub-sector-select" class="form-control">
+                                <option value="Solar">Solar</option>
+                                <option value="Wind">Wind</option>
+                                <option value="Hybrid">Hybrid</option>
+                                <option value="BESS">BESS (Battery Energy Storage System)</option>
+                                <option value="Green Hydrogen">Green Hydrogen</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Party Details -->
+                    <div class="wizard-step-panel" id="panel-4">
+                        <h2>Step 4: Party Details</h2>
+                        <div class="form-group">
+                            <label>Number of Parties</label>
+                            <select id="parties-count" class="form-control">
+                                <option value="2">Two Parties</option>
+                                <option value="3">Three Parties</option>
+                            </select>
+                        </div>
+                        <div id="parties-cards-container">
+                            <!-- Dynamically loaded party cards -->
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Role Identification -->
+                    <div class="wizard-step-panel" id="panel-5">
+                        <h2>Step 5: Party Role Identification</h2>
+                        <div id="role-identification-content">
+                            <!-- Loaded dynamically based on Unilateral/Mutual NDA selection -->
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Purpose & Recitals -->
+                    <div class="wizard-step-panel" id="panel-6">
+                        <h2>Step 6: Purpose / Recitals</h2>
+                        <div class="form-group">
+                            <label>Select Purpose Template</label>
+                            <select id="purpose-template-select" class="form-control">
+                                <option value="">-- Choose Purpose --</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Custom Purpose Override</label>
+                            <textarea id="custom-purpose-textarea" class="form-control" rows="3"
+                                placeholder="Enter custom purpose details to override or use if no template is chosen..."></textarea>
+                        </div>
+                        <div class="preview-box" id="purpose-preview-box" style="display:none;">
+                            <h4>Database Text Preview</h4>
+                            <p><strong>Recital Variant:</strong> <span id="db-recital-preview">None</span></p>
+                            <p><strong>Purpose Definition:</strong> <span id="db-purpose-preview">None</span></p>
+                            <p><strong>Confidential Information Expansion:</strong> <span id="db-ci-preview">None</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 7: Commercial Terms -->
+                    <div class="wizard-step-panel" id="panel-7">
+                        <h2>Step 7: Commercial Terms</h2>
+                        <div class="form-group">
+                            <label>Agreement Term</label>
+                            <select id="agreement-term-select" class="form-control">
+                                <option value="1 Year">1 Year</option>
+                                <option value="2 Years">2 Years</option>
+                                <option value="3 Years">3 Years</option>
+                                <option value="5 Years">5 Years</option>
+                                <option value="Custom">Custom</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="custom-term-container" style="display:none;">
+                            <label>Enter Custom Term</label>
+                            <input type="text" id="custom-term-input" class="form-control" placeholder="e.g. 18 Months">
+                        </div>
+                        <div class="form-group">
+                            <label>Renewal Type</label>
+                            <select id="renewal-select" class="form-control">
+                                <option value="Auto Renewal">Auto Renewal</option>
+                                <option value="Manual Renewal">Manual Renewal</option>
+                                <option value="No Renewal">No Renewal</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Notice Period</label>
+                            <select id="notice-period-select" class="form-control">
+                                <option value="15 Days">15 Days</option>
+                                <option value="30 Days">30 Days</option>
+                                <option value="60 Days">60 Days</option>
+                                <option value="90 Days">90 Days</option>
+                                <option value="Custom">Custom</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="custom-notice-container" style="display:none;">
+                            <label>Enter Custom Notice Period</label>
+                            <input type="text" id="custom-notice-input" class="form-control" placeholder="e.g. 45 Days">
+                        </div>
+                    </div>
+
+                    <!-- Step 8: Clause Library -->
+                    <div class="wizard-step-panel" id="panel-8">
+                        <h2>Step 8: Clause Library</h2>
+                        <div class="clauses-grid">
+                            <div class="clause-col">
+                                <h3>Mandatory (Auto-included)</h3>
+                                <ul class="clause-check-list" id="mandatory-clauses-list">
+                                    <!-- Loaded dynamically from structured schema -->
+                                </ul>
+                            </div>
+                            <div class="clause-col">
+                                <h3>Optional (Select to configure)</h3>
+                                <ul class="clause-check-list" id="optional-clauses-list">
+                                    <!-- Loaded dynamically from structured schema -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 9: Clause Config -->
+                    <div class="wizard-step-panel" id="panel-9">
+                        <h2>Step 9: Clause Configuration</h2>
+                        <div id="no-clause-config-message">
+                            <p class="text-muted">No configuration required. Select optional clauses in Step 8 to
+                                configure them here.</p>
+                        </div>
+                        <div id="clause-configs-container">
+                            <div class="clause-config-card" id="config-limitation-of-liability" style="display:none;">
+                                <h3>Limitation of Liability</h3>
+                                <div class="form-group">
+                                    <label>Liability Cap Type</label>
+                                    <select id="liability-cap-select" class="form-control">
+                                        <option value="No Cap">No Cap</option>
+                                        <option value="INR 5 Lakhs">INR 5 Lakhs</option>
+                                        <option value="INR 10 Lakhs">INR 10 Lakhs</option>
+                                        <option value="INR 50 Lakhs">INR 50 Lakhs</option>
+                                        <option value="INR 1 Crore">INR 1 Crore</option>
+                                        <option value="Custom">Custom Amount</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="custom-cap-container" style="display:none;">
+                                    <label>Enter Custom Cap</label>
+                                    <input type="text" id="custom-cap-input" class="form-control"
+                                        placeholder="e.g. 100% of Contract Value">
+                                </div>
+                            </div>
+
+                            <div class="clause-config-card" id="config-non-solicitation" style="display:none;">
+                                <h3>Non-Solicitation</h3>
+                                <div class="form-group">
+                                    <label>Restricted Period</label>
+                                    <select id="non-sol-period" class="form-control">
+                                        <option value="1 Year">1 Year</option>
+                                        <option value="2 Years">2 Years</option>
+                                        <option value="3 Years">3 Years</option>
+                                        <option value="Custom">Custom</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="custom-non-sol-container" style="display:none;">
+                                    <label>Enter Custom Restricted Period</label>
+                                    <input type="text" id="custom-non-sol-input" class="form-control"
+                                        placeholder="e.g. 6 Months">
+                                </div>
+                            </div>
+
+                            <div class="clause-config-card" id="config-non-circumvention" style="display:none;">
+                                <h3>Non-Circumvention</h3>
+                                <div class="form-group">
+                                    <label>Restricted Period</label>
+                                    <select id="non-circ-period" class="form-control">
+                                        <option value="1 Year">1 Year</option>
+                                        <option value="2 Years">2 Years</option>
+                                        <option value="3 Years">3 Years</option>
+                                        <option value="Custom">Custom</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="custom-non-circ-container" style="display:none;">
+                                    <label>Enter Custom Restricted Period</label>
+                                    <input type="text" id="custom-non-circ-input" class="form-control"
+                                        placeholder="e.g. 18 Months">
+                                </div>
+                            </div>
+
+                            <div class="clause-config-card" id="config-data-protection" style="display:none;">
+                                <h3>Data Protection</h3>
+                                <div class="form-group">
+                                    <label>Compliance Type</label>
+                                    <select id="data-protection-type" class="form-control">
+                                        <option value="Basic">Basic Security Standards</option>
+                                        <option value="Enhanced">Enhanced Security Standards (ISO 27001)</option>
+                                        <option value="DPDP Act, 2023">DPDP Act, 2023 Compliance (India)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 10: Definitions -->
+                    <div class="wizard-step-panel" id="panel-10">
+                        <h2>Step 10: Definitions Configuration</h2>
+                        <div class="clauses-grid">
+                            <div class="clause-col">
+                                <h3>Mandatory (Auto-included)</h3>
+                                <ul class="clause-check-list" id="mandatory-definitions-list">
+                                    <!-- Loaded dynamically from structured schema -->
+                                </ul>
+                            </div>
+                            <div class="clause-col">
+                                <h3>Optional Definitions</h3>
+                                <ul class="clause-check-list" id="optional-definitions-list">
+                                    <!-- Loaded dynamically from structured schema -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 11: Notice Details -->
+                    <div class="wizard-step-panel" id="panel-11">
+                        <h2>Step 11: Notice Details</h2>
+                        <div id="notice-details-container">
+                            <!-- Notice details inputs loaded dynamically based on Parties in Step 4 -->
+                        </div>
+                    </div>
+
+                    <!-- Step 12: Dispute Resolution -->
+                    <div class="wizard-step-panel" id="panel-12">
+                        <h2>Step 12: Dispute Resolution</h2>
+                        <div class="form-group">
+                            <label>Governing Law</label>
+                            <select id="governing-law-select" class="form-control">
+                                <option value="India">India</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="England & Wales">England & Wales</option>
+                                <option value="UAE">UAE</option>
+                                <option value="Custom">Custom Jurisdiction</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="state-select-container">
+                            <label>Jurisdiction State (India)</label>
+                            <select id="governing-state-select" class="form-control">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Custom">Custom State</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Dispute Resolution Mechanism</label>
+                            <select id="dispute-mechanism" class="form-control">
+                                <option value="Arbitration">Arbitration (Recommended)</option>
+                                <option value="Courts Only">Courts Only</option>
+                            </select>
+                        </div>
+                        <div id="arbitration-options-container">
+                            <div class="form-group">
+                                <label>Arbitration Institution</label>
+                                <select id="arbitration-institution" class="form-control">
+                                    <option value="Ad Hoc Arbitration">Ad Hoc Arbitration</option>
+                                    <option value="MCIA">MCIA (Mumbai Centre for International Arbitration)</option>
+                                    <option value="SIAC">SIAC (Singapore International Arbitration Centre)</option>
+                                    <option value="ICC">ICC (International Chamber of Commerce)</option>
+                                    <option value="DIAC">DIAC (Dubai International Arbitration Centre)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Seat of Arbitration</label>
+                                <select id="arbitration-seat" class="form-control">
+                                    <option value="New Delhi">New Delhi</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="London">London</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Custom">Custom</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Number of Arbitrators</label>
+                                <select id="arbitrators-count" class="form-control">
+                                    <option value="Sole Arbitrator">Sole Arbitrator</option>
+                                    <option value="Three Arbitrators">Three Arbitrators</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Pre-Arbitration Condition</label>
+                                <select id="pre-arbitration-condition" class="form-control">
+                                    <option value="Direct Negotiation (30 Days)">Direct Negotiation (30 Days)</option>
+                                    <option value="Mediation then Arbitration">Mediation then Arbitration</option>
+                                    <option value="No Pre-Condition">No Pre-Condition</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 13: Execution Details -->
+                    <div class="wizard-step-panel" id="panel-13">
+                        <h2>Step 13: Execution Details</h2>
+                        <div class="form-group">
+                            <label>Electronic Signatures Enabled</label>
+                            <select id="electronic-signatures" class="form-control">
+                                <option value="Yes">Yes (Sign via e-sign platform)</option>
+                                <option value="No">No (Physical signatures only)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Execution in Counterparts</label>
+                            <select id="execution-counterparts" class="form-control">
+                                <option value="Yes">Yes (Sign separate copies)</option>
+                                <option value="No">No (Sign same single copy)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Witness Requirement</label>
+                            <select id="witness-required" class="form-control">
+                                <option value="No">No Witness Required</option>
+                                <option value="Yes">Yes, Witness Signature Block Required</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 14: AI Review Summary -->
+                    <div class="wizard-step-panel" id="panel-14">
+                        <h2>Step 14: AI Review Summary</h2>
+                        <div class="summary-dashboard" id="summary-dashboard-content">
+                            <!-- Loaded dynamically to show a beautiful dashboard review -->
+                        </div>
+                    </div>
+
+                    <!-- Step 15: AI Contract Enhancement -->
+                    <div class="wizard-step-panel" id="panel-15">
+                        <h2>Step 15: AI Contract Enhancement</h2>
+                        <div class="form-group">
+                            <label>Optional AI Instructions</label>
+                            <textarea id="ai-user-prompt" class="form-control" rows="4"
+                                placeholder="e.g., Make the language more investor-focused, improve enforceability, ensure concise drafting..."></textarea>
+                            <small class="text-muted">The AI acts as a post-generation refinement layer. It will preserve all commercial terms, party data, and deterministic JSON values.</small>
+                        </div>
+                        <div class="generate-actions-container" style="margin-top: 15px;">
+                            <button id="enhance-ai-btn" class="btn btn-accent btn-large">✨ Enhance Contract Using AI</button>
+                        </div>
+                        <div id="ai-loading-status" style="display:none; margin-top: 15px; padding: 15px; background: #eef2ff; border-left: 4px solid #6366f1; border-radius: 4px;">
+                            <p style="margin: 0; color: #4338ca; font-weight: 500;">⏳ AI is reforming the contract in batches...</p>
+                            <small style="color: #6366f1;">This may take 1-2 minutes depending on length. RAG context is being retrieved.</small>
+                        </div>
+                    </div>
+
+                    <!-- Step 16: Generate & Export -->
+                    <div class="wizard-step-panel" id="panel-16">
+                        <h2>Step 16: Generate & Export</h2>
+                        <div class="generate-status-message">
+                            <p>Your contract parameters are fully configured! Review your live document draft in the
+                                preview panel, edit any clauses if necessary, and export below.</p>
+                        </div>
+                        <div class="generate-actions-container">
+                            <button id="download-docx-btn" class="btn btn-primary btn-large">📥 Download Microsoft Word
+                                (.docx)</button>
+                            <button id="ai-risk-btn" class="btn btn-warning">🔍 Run AI Risk Audit</button>
+                            <button id="redline-btn" class="btn btn-accent">✏️ Get Redline Suggestions</button>
+                        </div>
+                    </div>
+
+                    <!-- Wizard Navigation Buttons -->
+                    <div class="wizard-nav-buttons">
+                        <button id="prev-btn" class="btn btn-secondary" disabled>← Previous</button>
+                        <button id="next-btn" class="btn btn-primary">Next →</button>
+                    </div>
+                </div>
+
+                <!-- Right: Split Preview Panel -->
+                <div class="preview-panel">
+                    <div class="preview-header">
+                        <h3>📄 Contract Draft Preview</h3>
+                        <div class="preview-actions">
+                            <span class="preview-mode-tag">Dynamic Live Mode</span>
+                            <button id="fullscreen-preview-toggle" class="btn btn-mini">🔍 Toggle Full Screen</button>
+                            <button id="edit-preview-toggle" class="btn btn-mini">✏️ Edit Text Directly</button>
+                            <button id="toggle-comparison-btn" class="btn btn-mini btn-accent" style="display:none;">⚖️ Toggle Comparison View</button>
+                        </div>
+                    </div>
+                    <!-- Realistic simulated page container -->
+                    <div class="simulated-page-container" id="simulated-pages-wrapper" style="display: flex; gap: 20px;">
+                        <!-- Rule Based Contract View -->
+                        <div class="simulated-a4-page" id="v1-page" style="flex: 1;">
+                            <div class="doc-header" style="justify-content: space-between; align-items: center; display: flex;">
+                                <div>
+                                    <span>LexForge Legal Platform</span><br>
+                                    <span id="doc-header-type">NDA DRAFT (Rule-Based)</span>
+                                </div>
+                                <button id="download-docx-btn-v1-top" class="btn btn-primary btn-mini">📥 Download Rule-Based</button>
+                            </div>
+                            <div id="contract-live-preview" class="contract-text-body" contenteditable="false">
+                                <!-- Realtime contract preview loads here -->
+                            </div>
+                            <div class="doc-footer">
+                                <span>CONFIDENTIAL & PROPRIETARY</span>
+                                <span id="doc-footer-page">Page 1 of 1</span>
+                            </div>
+                        </div>
+                        
+                        <!-- AI Reformed Contract View (Hidden by Default) -->
+                        <div class="simulated-a4-page" id="v2-page" style="display:none; flex: 1; border-left: 4px solid #6366f1;">
+                            <div class="doc-header" style="justify-content: space-between; align-items: center; display: flex;">
+                                <div>
+                                    <span style="color: #6366f1; font-weight: bold;">✨ AI-Reformed Contract</span><br>
+                                    <span id="doc-header-type-ai">NDA DRAFT</span>
+                                </div>
+                                <button id="download-ai-docx-btn-top" class="btn btn-primary btn-mini">📥 Download AI DOCX</button>
+                            </div>
+                            <div id="ai-reformed-preview" class="contract-text-body" contenteditable="false">
+                                <!-- AI contract preview loads here -->
+                            </div>
+                            <div class="doc-footer" style="margin-top: 15px; text-align: center;">
+                                <span id="doc-footer-page-ai">Page 1 of 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Risk Review Modal Panel (Sliding Sidebar or overlays) -->
+        <div class="risk-audit-sidebar" id="risk-sidebar">
+            <div class="sidebar-close-btn" id="close-risk-sidebar">×</div>
+            <h3>🔍 LexForge AI Auditor</h3>
+            <p class="subtitle">Clause risk scorecard and corrections.</p>
+            <hr>
+            <div id="risk-list">
+                <p class="text-muted">Click "Run AI Risk Audit" in Step 15 to scan this agreement.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+    <script src="/static/api.js"></script>
+</body>
+
+</html>

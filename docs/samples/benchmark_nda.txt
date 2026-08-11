@@ -1,0 +1,58 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+This Mutual Non-Disclosure Agreement ("Agreement") is entered into on this ___ day of ________, 20 ("Effective Date")
+BY AND BETWEEN
+[Party A Name], a company incorporated under the laws of __________ and having its registered office at ___________________________ (hereinafter referred to as the "Disclosing Party" and/or "Receiving Party", as the context may require, which expression shall unless repugnant to the context or meaning thereof include its successors and permitted assigns);
+AND
+[Party B Name], a company incorporated under the laws of __________ and having its registered office at ___________________________ (hereinafter referred to as the "Disclosing Party" and/or "Receiving Party", as the context may require, which expression shall unless repugnant to the context or meaning thereof include its successors and permitted assigns).
+Party A and Party B are hereinafter individually referred to as a "Party" and collectively as the "Parties".
+RECITALS
+WHEREAS, the Parties desire to enter into discussions and exchange certain confidential and proprietary information in connection with evaluating a potential business relationship, transaction, collaboration, investment, service arrangement, strategic alliance, or other commercial opportunity ("Purpose");
+WHEREAS, in connection with the Purpose, either Party may disclose certain Confidential Information to the other Party;
+WHEREAS, the Parties wish to protect such Confidential Information from unauthorized use, disclosure, or dissemination and therefore agree to be bound by the terms and conditions set forth herein.
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the Parties hereby agree as follows:
+1	DEFINITIONS
+For the purposes of this Agreement, the following capitalized terms shall have the meanings assigned to them below:
+1.1	"Affiliate"
+"Affiliate" means, with respect to any Party, any entity that directly or indirectly controls, is controlled by, or is under common control with such Party, where "control" means the ownership of more than fifty percent (50%) of the voting rights or the power to direct the management and policies of such entity.
+1.2	"Agreement"
+"Agreement" means this Mutual Non-Disclosure Agreement, including all schedules, annexures, exhibits, amendments, modifications, and supplements hereto.
+1.3	"Applicable Law"
+"Applicable Law" means any statute, law, ordinance, regulation, rule, notification, circular, order, judgment, decree, directive, governmental approval, or other legal requirement having the force of law and applicable to the Parties or the subject matter of this Agreement.
+1.4	"Authorized Recipient"
+"Authorized Recipient" means any Representative who has a legitimate need to know the Confidential Information for the Purpose and who is bound by confidentiality obligations no less restrictive than those contained herein.
+1.5	"Business Day"
+"Business Day" means any day other than a Saturday, Sunday, or public holiday on which banks are open for business in the jurisdiction specified in this Agreement.
+1.6	"Confidential Information"
+"Confidential Information" means any and all information disclosed by or on behalf of a Party ("Disclosing Party") to the other Party ("Receiving Party"), whether before, on, or after the Effective Date, in written, oral, visual, electronic, digital, graphic, machine-readable, or any other form, including but not limited to: (a) business plans, strategies, forecasts, and opportunities; (b) financial information, budgets, pricing, costs, revenues, and projections; (c) technical information, specifications, designs, drawings, schematics, models, formulas, inventions, know-how, discoveries, methodologies, and processes; (d) software, source code, object code, algorithms, databases, architecture, and technical documentation; (e) customer, supplier, contractor, consultant, and business partner information; (f) research and development information; (g) intellectual property and proprietary information; (h) trade secrets; (i) contractual arrangements and commercial terms; (j) data, reports, analyses, studies, compilations, summaries, notes, and derivative materials prepared from Confidential Information; and (k) any information that a reasonable person would understand to be confidential in nature.
+1.7	"Data Protection Laws"
+"Data Protection Laws" means all applicable laws relating to privacy, data protection, information security, and processing of personal data.
+1.8	"Disclosing Party"
+"Disclosing Party" means the Party disclosing or making available Confidential Information to the Receiving Party.
+1.9	"Effective Date"
+"Effective Date" means the date on which this Agreement is executed by the last signing Party.
+1.10	"Governmental Authority"
+"Governmental Authority" means any court, tribunal, arbitrator, ministry, department, commission, authority, regulator, agency, instrumentality, or other governmental or quasi-governmental body having jurisdiction.
+1.11	"Intellectual Property Rights"
+"Intellectual Property Rights" means all patents, patent applications, copyrights, trademarks, service marks, trade names, domain names, designs, database rights, moral rights, trade secrets, know-how, and all other intellectual property rights recognized under Applicable Law.
+1.12	"Permitted Disclosure"
+"Permitted Disclosure" means any disclosure expressly permitted under this Agreement, including disclosures to Authorized Recipients, Affiliates, professional advisors, auditors, lenders, investors, or disclosures required by Applicable Law.
+1.13	"Person"
+"Person" includes any individual, corporation, company, partnership, limited liability partnership, trust, association, joint venture, governmental authority, or other legal entity.
+1.14	"Personal Data"
+"Personal Data" means any information relating to an identified or identifiable natural person as defined under applicable Data Protection Laws.
+1.15	"Purpose"
+"Purpose" means the evaluation, discussion, negotiation, performance, or pursuit of a potential business relationship, commercial transaction, investment opportunity, collaboration, partnership, service arrangement, strategic alliance, acquisition, or other mutually agreed objective between the Parties.
+1.16	"Protected Material"
+"Protected Material" means Confidential Information and all copies, extracts, summaries, analyses, reports, notes, compilations, derivative works, and materials derived therefrom.
+1.17	"Receiving Party"
+"Receiving Party" means the Party receiving Confidential Information from the Disclosing Party.
+1.18	"Representatives"
+"Representatives" means a Party's directors, officers, employees, consultants, legal counsel, auditors, accountants, financial advisors, agents, contractors, and Affiliates.
+1.19	"Residual Knowledge"
+"Residual Knowledge" means information retained in the unaided memory of an individual without intentional memorization and without reference to any written or electronic records of Confidential Information.
+1.20	"Security Incident"
+"Security Incident" means any unauthorized access, acquisition, use, disclosure, alteration, loss, destruction, compromise, or breach of Confidential Information.
+1.21	"Third Party"
+"Third Party" means any Person other than the Parties and their Authorized Recipients.
+1.22	"Trade Secret"
+"Trade Secret" means information that derives independent economic value from not being generally known or readily ascertainable and is subject to reasonable efforts to maintain its secrecy.
